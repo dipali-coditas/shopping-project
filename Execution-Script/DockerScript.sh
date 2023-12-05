@@ -40,7 +40,10 @@ cd
 
 sudo apt-get install docker -y >/dev/null && echo "** Successfully Installed Docker **" || { echo "Failed to Install Docker"; exit 1; }
 sudo apt-get install docker-compose -y >/dev/null && echo "** Successfully Installed Docker-Compose **" || { echo "Failed to Install Docker-Copmose"; exit 1; }
-                                                                                                                            
+
+
+cd "$path"
+
 sudo docker-compose down && echo "Docker Is Down Now" || echo "Docker Already Down"
 
 #sudo docker rm shopping-project_frontend_1
@@ -49,7 +52,6 @@ sudo docker-compose down && echo "Docker Is Down Now" || echo "Docker Already Do
 sudo docker rmi shopping-project_frontend || echo "Error deleting frontend image"
 sudo docker rmi shopping-project_backend || echo "Error deleting backend image"
 
-cd "$path"
 sudo docker-compose up -d || echo "error in compose file"
 
 
