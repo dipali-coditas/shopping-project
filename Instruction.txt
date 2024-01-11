@@ -1,0 +1,41 @@
+# Github Repo : Shopping-project
+# vm name : shopping-app-instance
+
+1# Do SSH
+
+# Commands : 
+
+git clone https://github.com/dipali-coditas/shopping-project.git
+cd shopping-project/
+cd Execution-Script/
+ls
+chmod 777 StartScript.sh 
+ls
+./StartScript.sh 
+______________________________________________________________________________________________________________
+
+2# backend and DB
+
+# Take external Ip of VM : 34.100.239.195 
+
+# Add to DB : 34.100.239.195:8081  - > go to Mongo-db -> database : shpooing ->  Create Collection : Products 
+
+-> Add  Document ->
+
+# Go to Repo :
+
+Go to backend folder-> testing.py : copy any product
+
+{
+        "_id": ObjectId(),
+        "pid": 104, "name": 'Laptop', "price": 50000, "desc": "Best Laptop in the world...!", "img": "images/laptop.jpg"
+
+}
+
+"pid": 101, "name": 'Smart TV', "price": 25000, "desc": "Best TV in the world...!", "img": "images/tv.jpg"
+"pid": 102, "name": 'Smart Phone', "price": 15000, "desc": "Best Phone in the world...!", "img": "images/phone.jpg"
+"pid": 103, "name": 'Smart Watch', "price": 5000, "desc": "Best Watch in the world...!", "img": "images/smartwatch.jpg"
+"pid": 104, "name": 'Laptop', "price": 50000, "desc": "Best Laptop in the world...!", "img": "images/laptop.jpg"
+_____________________________________________________________________________________________________________________
+
+3# Go And only paste External Ip : 34.100.239.195  : now you can see all the products on it 
